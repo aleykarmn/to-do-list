@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: #F5F5F7;
+
+}
+
+.mavi-cicek{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.pembe-cicek{
+    position: absolute;
+    right: 0;
+    top: 9px;
+    z-index: -1;
+}
+
+.aley{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.aley-logo{
+    border: transparent;
+}
+
+.gorev-kisim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 205px;
+    width: 787px;
+    height: 64px;
+    border-radius: 10px;
+    margin-top: 37px;
+    background: white;
+}
+
+.gorev-ikon{
+
+}
+
+.gorev-span{
+    font-weight: bold;
+}
+
+.arti-ikon{
+    width: 23px;
+    height: 23px;
+    position: relative;
+    right: 9px;
+}
+
+.ikon-yazi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 11px;
+}
+
+.gorev-btn{
+    display: flex;
+    color: white;
+    width: 132px;
+    height: 37px;
+    border: transparent;
+    background: #3A8DB5;
+    border-radius: 10px;
+    font-size: 14px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.gorev-btn:hover{
+    cursor: pointer;
+    background: #539bbb;
+}
+
+.satirlar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 18px;
+    row-gap: 22px;
+}
+
+.css-satir{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 787px;
+    height: 64px;
+    border-radius: 10px;
+    background: white;
+    padding: 18px;
+}
+
+.search-ikon{
+    width: 22px;
+    height: 22px;
+    color: white;
+    position: relative;
+    right: 5px;
+}
+
+.css-butonlar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 13px;
+}
+
+.css-btn-1{
+    display: flex;
+    color: white;
+    width: 132px;
+    height: 37px;
+    border: transparent;
+    background: #3A8DB5;
+    border-radius: 10px;
+    font-size: 14px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-btn-2{
+    border: transparent;
+    border-radius: 10px;
+    color: white;
+    background: #D94A7C;
+    width: 37px;
+    height: 37px;
+}
+
+.css-btn-1:hover{
+    cursor: pointer;
+    background: #539bbb;
+}
+
+.css-btn-2:hover{
+    cursor: pointer;
+    background: #da608a;
+}
+
+.css-ikon-yazi{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 7px;
+}
+
+.delete-ikon{
+    width: 22px;
+    height: 22px;
+    color: white;
+}
+
+.span-2{
+
+}
+
+.span-5{
+
+}
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container-2{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container-3{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container-4{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-koyu-arkaplan{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    background-color: rgba(4, 4, 4, 0.54);
+}
+
+.modal-koyu-arkaplan-2{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    background-color: rgba(4, 4, 4, 0.54);
+}
+
+.modal-koyu-arkaplan-3,.modal-koyu-arkaplan-4{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    background-color: rgba(4, 4, 4, 0.54);
+}
+
+
+.modal-penceresi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 16px;
+    position: relative;
+    z-index: 11;
+    max-width: 726px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 45px;
+}
+
+.modal-penceresi-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 16px;
+    position: relative;
+    z-index: 11;
+    max-width: 726px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 45px;
+}
+
+.modal-penceresi-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    position: relative;
+    z-index: 11;
+    max-width: 726px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 45px;
+}
+
+.modal-penceresi-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    position: relative;
+    z-index: 11;
+    max-width: 726px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 45px;
+}
+
+.modal-container-gizle,.modal-container-gizle-2{
+    display: none;
+}
+
+.modal-container-gizle-3,.modal-container-gizle-4{
+    display: none;
+}
+
+.gorev-adı-text{
+    width: 639px;
+    height: 43px;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: none;
+    border: 1px solid #424242;
+
+}
+.input-hata::placeholder{
+    color: #ed6192;
+    font-weight: 600;
+}
+.gorev-aciklama{
+    width: 639px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 13px 12px;
+    outline: none;
+}
+
+
+.modal-span-2{
+    width: 644px;
+    outline: none;
+}
+
+.modal-btn{
+    color: white;
+    background: #D94A7C;
+    border: transparent;
+    border-radius: 10px;
+    width: 121px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 6px;
+}
+
+.modal-btn:hover{
+    cursor: pointer;
+    background: #da608a;
+}
+
+
+.plus-ikon{
+    width: 20px;
+    height: 20px;
+}
+
+.close-ikon,.close-ikon-2,.close-ikon-3,.close-ikon-4{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 24px;
+    top: 16px;
+}
+
+.close-ikon,.close-ikon-2:hover{
+    cursor: pointer;
+    color: #6b6b6b;
+}
+
+.close-ikon-3,.close-ikon-4:hover{
+    cursor: pointer;
+    color: #6b6b6b;
+}
+
+.sil-btn{
+    width: 206px;
+    height: 36px;
+    border: transparent;
+    border-radius: 10px;
+    background: #D94A7C;
+    color: white;
+}
+
+.sil-btn:hover{
+    cursor: pointer;
+    background: #da608a;
+
+}
+
+.display-flex{
+    display: flex !important;
+}
+
+
+@media(min-width: 1200px){
+    .ozel-container{
+        max-width:1117px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media(min-width: 700px){
+    .ozel-container{
+        max-width:617px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:550px){
+    .gorev-kisim{
+        flex-direction: column !important;
+        align-items: center;
+        height: 100% !important;
+        padding: 30px 15px !important;
+    }
+    .ikon-yazi{
+        flex-direction: column;
+    }
+    .css-ikon-yazi{
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-span-2{
+        width: 100% !important;
+    }
+    .modal-container{
+        padding: 0 15px;
+    }
+    .gorev-adı-text, .gorev-aciklama{
+        width: 300px;
+    }
+    .modal-penceresi{
+        padding: 15px;
+    }
+    .modal-container-2, .modal-container-3, .modal-container-4{
+        padding: 0 15px;
+    }
+    .gorev-span{
+        text-align: center !important;
+        padding: 15px 0;
+    }
+    .css-satir{
+        flex-direction: column!important;
+        height: 100% !important;
+        row-gap: 20px;
+    }
+}
+@media (max-width: 960px) {
+    .css-satir{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 64px;
+        border-radius: 10px;
+        background: white;
+        padding: 18px;
+    }
+
+    .span-5{
+        font-size: 12px;
+    }
+
+    .gorev-kisim{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 11px;
+        width: 100%;
+        height: 64px;
+        border-radius: 10px;
+        margin-top: 37px;
+        background: white;
+        padding: 5px;
+    }
+    
+
+    .gorev-btn{
+        width: 109px;
+    }
+
+    .arti-ikon{
+        width: 22px;
+        height: 22px;
+        position: relative;
+        right: 3px;
+    }
+    .mavi-cicek{
+        height: 200px;
+        width: auto;
+    }
+    .pembe-cicek{
+        height: 500px;
+        width: auto;
+        bottom: 0;
+        top: unset;
+    }
+    .aley-logo{
+        width: 100px;
+        height: auto;
+        position: relative;
+        bottom: -20px;
+    }
+    .ozel-container{
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
